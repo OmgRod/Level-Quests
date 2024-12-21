@@ -23,6 +23,10 @@ jobs:
           os: ubuntu-latest
           target: Android64
 
+        - name: MacOS
+          os: macos-latest
+          target: MacOS
+
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
 
